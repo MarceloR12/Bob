@@ -1,0 +1,122 @@
+*{
+    background-color: #D8D8D8;
+}
+
+.Autos {}
+/* Karosserie der Autos */
+
+.Autos p {
+	background: #4C0B5F;
+	border: 1px solid #333;
+	border-radius: 50% / 100%;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	font-size: 16px;
+	padding: 0.9em;
+	position: relative;
+	text-align: center;
+	width: 100px;
+}
+
+/* Autoreifen */
+.Autos p:after,
+.Autos p:before {
+	position: absolute;
+	color: black;
+	content: "o";
+	font-size: 3.5em;
+	width: 3em;
+	height: 3em;
+	top: 20px;
+}
+
+/*Animation*/
+.Autos p {
+	-webkit-animation: rennen 9s infinite 0s;
+	animation: rennen 9s infinite 0s;
+}
+
+.Autos p:after {
+	right: 10px;
+}
+
+.Autos p:before {
+	left: 10px;
+}
+
+.Autos .ease-in {
+	background: #08088A;
+}
+
+.Autos .ease-in-out {
+	background: #21610B;
+}
+
+.Autos .ease-in {
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+}
+
+.Autos .ease-in-out {
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rennen {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(83em);
+	}
+}
+/*Üerschrift*/
+h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A0808;
+    font-size: 150px;
+    font-family:atala;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+/*Formtierung des roten rechteckigen Hintergunds der einzelnen "Buttons"*/
+#Rechteck{
+    width: 220px;
+    height: 110px;
+    background-color: #8A0808;
+    margin-top: 9%;
+    margin-left:9%;
+    border-radius: 10%;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+/*Tabelle, damit "Buttons" diese Anordnung haben*/
+table{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Format der Schrift der "Buttons"*/
+a{
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    font-family:atala;
+    font-size: 25px;
+}
+/*Bei Berührung der "Buttons"*/
+a:hover{
+    color: black;
+}
+
+p{
+    color: white;
+    font-family:atala;
+}

@@ -1,0 +1,46 @@
+
+h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #8A0808;
+    font-size: 150px;
+    font-family:luminari;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
+
+table{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    font-size: 22px;
+}
+
+#Rechteck{
+    width: 180px;
+    height: 90px;
+    background-color: #8A0808;
+    margin-top: 9%;
+    margin-left:9%;
+    border-radius: 10%;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    font-family:luminari;
+}
+
+a:hover{
+    color: black;
+}

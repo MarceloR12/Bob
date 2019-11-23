@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css"rel="stylesheet" href="Projekt.css" />
+    <script src="Projekt.js"></script>
+
+  </head>
+
+  <body>
+<h1>RUSHHOUR</h1>
+
+<div id="LevelAnzeige"><p>level: x</p></div>
+
+<!--Menü für Optionen während des Spiels-->
+<div><nav>
+	<ul>
+		<li><a href="Startseite.html">menu</a></li>
+		   <li tabindex="0"><a href="#">level</a>
+			<ul>
+				<li><a href="#" tabindex="0">previous level</a></li>
+				<li><a href="#" tabindex="0">level overview</a></li>
+            	<li><a href="#" tabindex="0">level overview</a></li>
+			</ul>
+		   </li>
+		<li><a tabindex="0" href="#">restart</a></li>
+		   <li tabindex="0"><a href="#">settings</a>
+			<ul>
+				<li><a href="#" tabindex="0">sound</a></li>
+				<li><a href="#" tabindex="0">dark mode</a></li>
+				<li><a href="#" tabindex="0">music</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Seite 5</a></li>
+	</ul>
+</nav></div>
+
+<!--Spiel-->
+
+    <table id="level">
+    <tr><!-- erste Zeile -->
+      <td><img id="eins" src="Autos/greenO.png"></td>
+      <td><img id="zwei" onclick="split('','eins','zwei','drei','vier','','','neun','sechszehn')" src="Autos/greenO.png"></td>
+      <td><img id="drei" onclick="split('eins','zwei','drei','vier','fünf','','','zehn','siebzehn')" src="Autos/greenO.png"></td>
+      <td><img id="vier" onclick="split('zwei','drei','vier','fünf','','','','elf','achtzehn')" src="Autos/greenO.png"></td>
+      <td><img id="fünf" src="Autos/i.png"></td>
+    </tr>
+    <tr><!-- zweite Zeile -->
+      <td><img id="acht" onclick="split('','','acht','','','','eins','fünfzehn','zweiundzwanzig')" src="Autos/greenU.png"> </td>
+      <td><img id="neun" onclick="split('','acht','neun','zehn','elf','','zwei','sechszehn','dreiundzwanzig')" src="Autos/greenU.png"></td>
+      <td><img id="zehn" onclick="split('acht','neun','zehn','elf','zwölf','','drei','siebzehn','vierundzwanzig')" src="Autos/greenU.png"></td>
+      <td><img id="elf" onclick="split('neun','zehn','elf','zwölf','','','vier','achtzehn', 'fünfundzwanzig')" src="Autos/greenU.png"></td>
+      <td><img id="zwölf" onclick="split('','','zwölf','','','','fünf','neunzehn','sechsundzwanzig')" src="Autos/i.png"></td>
+    </tr>
+    <tr><!-- dritte Zeile -->
+      <td><img id="fünfzehn" onclick="split('','','fünfzehn','','','eins','acht','zweiundzwanzig','neunundzwanzig')" src="Autos/i.png"></td>
+      <td><img id="sechszehn" onclick="split('','fünfzehn','sechszehn','siebzehn','achtzehn','zwei','neun','dreiundzwanzig','dreißig')" src="Autos/i.png"></td>
+      <td><img id="siebzehn" onclick="split('fünfzehn','sechszehn','siebzehn','achtzehn','neunzehn','drei','zehn','vierundzwanzig','einunddreißig')" src="Autos/i.png"></td>
+      <td><img id="achtzehn" onclick="split('sechszehn','siebzehn','achtzehn','neunzehn','','vier','elf','fünfundzwanzig','zweiunddreißig')" src="Autos/i.png"></td>
+      <td><img id="neunzehn" onclick="split('','','neunzehn','','','fünf','zwölf','sechsundzwanzig', 'dreiunddreißig')" src="Autos/i.png"></td>
+    </tr>
+    <tr><!-- vierte Zeile -->
+      <td><img id="zweiundzwanzig" onclick="split('','','zweiundzwanzig','','','acht','fünfzehn','neunundzwanzig','sechsunddreißig')" src="Autos/lilaL.png"></td>
+      <td><img id="dreiundzwanzig" onclick="split('','zweiundzwanzig','dreiundzwanzig','vierundzwanzig','fünfundzwanzig','neun','sechszehn','dreißig','siebenunddreißig')" src="Autos/lilaR.png"></td>
+      <td><img id="vierundzwanzig" onclick="split('zweiundzwanzig','dreiundzwanzig','vierundzwanzig','fünfundzwanzig','sechsundzwanzig','zehn','siebzehn','einunddreißig','achtunddreißig')" src="Autos/i.png"></td>
+      <td><img id="fünfundzwanzig" onclick="split('dreiundzwanzig','vierundzwanzig','fünfundzwanzig','sechsundzwanzig','outone','elf','achtzehn','zweiunddreißig','neununddreißig')" src="Autos/i.png"></td>
+      <td><img id="sechsundzwanzig" onclick="split('vierundzwanzig','fünfundzwanzig','sechsundzwanzig','outone','outtwo','zwölf','neunzehn','dreiunddreißig','vierzig')" src="Autos/lkwOX.png"></td>
+
+      <td><img id="outone" onclick="split('fünfundzwanzig','sechsundzwanzig','outone','outtwo','','','','',''); setTimeout(win, 100);" src="Autos/i.png"></td>
+      <td><img id="outtwo" src="Autos/i.png"></td>
+    </tr>
+    <tr><!-- fünfte Zeile -->
+      <td><img id="neunundzwanzig" onclick="split('','','neunundzwanzig','dreißig','einunddreißig','fünfzehn','zweiundzwanzig','sechsunddreißig','')" src="Autos/i.png"></td>
+      <td><img id="dreißig" onclick="split('','neunundzwanzig','dreißig','einunddreißig','zweiunddreißig','sechszehn','dreiundzwanzig','siebenunddreißig','')" src="Autos/i.png"></td>
+      <td><img id="einunddreißig" onclick="split('neunundzwanzig','dreißig','einunddreißig','zweiunddreißig','dreiunddreißig','siebzehn','vierundzwanzig','achtunddreißig','')" src="Autos/i.png"></td>
+      <td><img id="zweiunddreißig" onclick="split('dreißig','einunddreißig','zweiunddreißig','dreiunddreißig','','achtzehn','fünfundzwanzig','neununddreißig','')" src="Autos/i.png"></td>
+      <td><img id="dreiunddreißig" onclick="split('einunddreißig','zweiunddreißig','dreiunddreißig','','','neunzehn','sechsundzwanzig','vierzig','')" src="Autos/lkwi.png"></td>
+    </tr>
+    <tr><!-- sechste Zeile -->
+      <td><img id="sechsunddreißig" src="Autos/i.png"></td>
+      <td><img id="siebenunddreißig" onclick="split('','sechsunddreißig','siebenunddreißig','achtunddreißig','neununddreißig','dreiundzwanzig','dreißig','','')" src="Autos/i.png"></td>
+      <td><img id="achtunddreißig" onclick="split('sechsunddreißig','siebenunddreißig','achtunddreißig','neununddreißig','vierzig','vierundzwanzig','einunddreißig','','')" src="Autos/i.png"></td>
+      <td><img id="neununddreißig" onclick="split('siebenunddreißig','achtunddreißig','neununddreißig','vierzig','','fünfunfzwanzig','zweiunddreißig','','')" src="Autos/i.png"></td>
+      <td><img id="vierzig" src="Autos/lkwUX.png"></td>
+    </tr>
+ </table>
+
+
+  </body>
+</html>

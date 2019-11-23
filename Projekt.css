@@ -1,0 +1,143 @@
+*{
+  margin: auto;
+  background-color: ;
+  font-family: atala;
+}
+
+#LevelAnzeige{
+    float: right;
+    background-color: #8A0808;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+	padding: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 10px;
+	color: white;
+    margin-right: 2%;
+
+}
+
+/*Format der Tabellenspalten des Spiels*/
+td {
+  height: 100px;
+  width: 100px;
+  border: 0.1px solid black;
+}
+
+
+table{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Menü zum Auswählen der Optionen während des Spiels*/
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	font-size: 1.5em;
+	position: relative;
+	margin: 0 0 .2em 0;
+	padding: 0;
+	width: 12em;
+}
+
+nav ul ul {
+	position: absolute;
+	top: -0.6em;
+	left: 10em;
+	font: 0/0 serif;
+	/* Unternavigation ausblenden */
+
+	z-index: -1;
+	transition: font 0.5s;
+}
+
+nav ul li:hover ul,
+nav ul a:focus ~ ul {
+	font: inherit;
+	z-index: auto;
+	/*  Unternavigation einblenden */
+}
+
+@media (min-width: 45em) {
+	nav li {
+		font-size: 1em;
+	}
+}
+
+nav a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 10px;
+	color: black;
+	background-color: white;
+	transition: all .25s ease-in;
+}
+
+
+nav a:focus,
+nav a:hover
+{
+	color: blue;
+}
+
+/*  Damit Menü neben Spiel liegt + Positon/ Abstände */
+div{
+    float: left;
+    padding-left: 2%;
+    margin-top: 5%;
+}
+
+li{
+    color: black;
+}
+
+
+img{
+  margin: auto;
+  height: 100px;
+  width: 100px;
+}
+
+p{
+    background-color: inherit;
+}
+
+content:url("i.png"){
+    display: none;
+}
+
+
+#level{
+  visibility: ;
+  font-size: 0px;
+  color: black;
+}
+.menu{
+  font-size: 20px;
+  color: black;
+}
+
+h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #8A0808;
+    font-size: 130px;
+    font-family:atala;
+    margin-top: auto;
+    margin-bottom: 0%;
+}
